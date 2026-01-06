@@ -35,18 +35,18 @@ function playRound(humanChoice, computerChoice){
     )
     {
         humanScore++;
-        console.log("You win! " + humanChoice + " beats " + computerChoice) ;
+        alert("You win! " + humanChoice + " beats " + computerChoice) ;
     }else if(
         (humanChoice === "scissor" && computerChoice === "scissor") ||
         (humanChoice === "paper" && computerChoice === "paper") ||
         (humanChoice === "rock" && computerChoice === "rock")
     )
     {
-        console.log("You draw! " + humanChoice + " ties " + computerChoice);
+        alert("You draw! " + humanChoice + " ties " + computerChoice);
     }
     else {
         computerScore++;
-        console.log("You lose! " + computerChoice + " beats " + humanChoice) ;
+        alert("You lose! " + computerChoice + " beats " + humanChoice) ;
     }
 
 }
@@ -56,18 +56,37 @@ function playGame(){
         const computerChoice = getComputerChoice();
         const humanChoice = getHumanChoice();
         playRound(humanChoice, computerChoice);
-        console.log("Human Score: " + humanScore);
-        console.log("Computer Score: " + computerScore);
+        alert("Human Score: " + humanScore);
+        alert("Computer Score: " + computerScore);
+       
     }
+    alert("Final Human Score: " + humanScore);
+    alert("Final Computer Score: " + computerScore);
     console.log("Final Human Score: " + humanScore);
     console.log("Final Computer Score: " + computerScore);
 
     if(humanScore > computerScore){
+        alert("Congratulations~You are the Winner!");
         console.log("Congratulations~You are the Winner!") ;
     }else{
+        alert("Sorry~You are the loser!");
         console.log("Sorry~You are the loser!");
     }
 }
 
-playGame();
+let replayBool = true;
+
+while(replayBool){
+    playGame();
+
+    replayChoice = prompt("Do you want to play again?", "yes");
+    replayChoice = replayChoice.toLowerCase();
+
+    if(replayChoice === "yes"){
+        replayBool = true
+    }else{
+        replayBool = false;
+    }
+}
+
 
