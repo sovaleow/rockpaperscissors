@@ -1,41 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock,Paper, or Scissors</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
     <div class="title">
-        <h1>Rock, Paper or Scissors Game</h1>
+      <h1>Rock, Paper or Scissors Game</h1>
     </div>
 
     <div class="score">
-        <div class="playerScore">
-           <h2>Player:</h2>
-            <p class="playerCount">0</p> 
-        </div>
+      <div class="playerScore">
+        <h2>Player:</h2>
+        <p class="playerCount">0</p>
+      </div>
 
-        <div class="computerScore">
-            <h2>Computer:</h2>
-            <p class="computerCount">0</p>
-        </div>
+      <div class="computerScore">
+        <h2>Computer:</h2>
+        <p class="computerCount">0</p>
+      </div>
     </div>
 
-    <div class="RoundSelection">
-        
-    </div>
+    
 
     <div class="move">Choose your move:</div>
-    
+
     <div class="options">
-        <button class="rock">Rock</button>
-        <button class="paper">Paper</button>
-        <button class="scissor">Scissor</button>
+      <button class="rock">Rock</button>
+      <button class="paper">Paper</button>
+      <button class="scissor">Scissor</button>
     </div>
     
-    <div class="result"> </div>
-    <button class="restart">Restart</button>
+    <div class="roundSelection"></div>
+    <div class="result"></div>
+
+    <div class="images">
+      <div class="playerContainer">
+        <div class="playerHearts">
+          <img
+            class="playerHeart1"
+            src="Images/vecteezy_pixel-love-heart-symbol-icons-design-elements-for_24662465.jpg"
+            alt="full-heart-image"
+          />
+
+          <img
+            class="playerHeart2"
+            src="Images/vecteezy_pixel-love-heart-symbol-icons-design-elements-for_24662465.jpg"
+            alt="full-heart-image"
+          />
+          <img
+            class="playerHeart3"
+            src="Images/vecteezy_pixel-love-heart-symbol-icons-design-elements-for_24662465.jpg"
+            alt="full-heart-image"
+          />
+          <img
+            class="playerHeart4"
+            src="Images/vecteezy_pixel-love-heart-symbol-icons-design-elements-for_24662465.jpg"
+            alt="full-heart-image"
+          />
+          <img
+            class="playerHeart5"
+            src="Images/vecteezy_pixel-love-heart-symbol-icons-design-elements-for_24662465.jpg"
+            alt="full-heart-image"
+          />
+        </div>
+
+        <div class="player">
+          <img
+            src="Images/vecteezy_a-man-holding-a-controller-icon_55594209.jpg"
+            alt="player-image"
+          />
+        </div>
+      </div>
+
+      <div class="computerContainer">
+        <div class="computerHearts">
+          <img
+            class="computerHeart1"
+            src="Images/vecteezy_pixel-love-heart-symbol-icons-design-elements-for_24662465.jpg"
+            alt="full-heart-image"
+          />
+          <img
+            class="computerHeart2"
+            src="Images/vecteezy_pixel-love-heart-symbol-icons-design-elements-for_24662465.jpg"
+            alt="full-heart-image"
+          />
+          <img
+            class="computerHeart3"
+            src="Images/vecteezy_pixel-love-heart-symbol-icons-design-elements-for_24662465.jpg"
+            alt="full-heart-image"
+          />
+          <img
+            class="computerHeart4"
+            src="Images/vecteezy_pixel-love-heart-symbol-icons-design-elements-for_24662465.jpg"
+            alt="full-heart-image"
+          />
+          <img
+            class="computerHeart5"
+            src="Images/vecteezy_pixel-love-heart-symbol-icons-design-elements-for_24662465.jpg"
+            alt="full-heart-image"
+          />
+        </div>
+
+        <div class="computer">
+          <img
+            src="Images/vecteezy_high-resolution-colorful-robot-emoji-with-metallic-silver_67107922.jpg"
+            alt="computer-image"
+          />
+        </div>
+      </div>
+    </div>
+
+     <div class="restartButton">
+    <button class="restart">Restart</button> 
+    </div>
+    <!-- make this show only after finishing the game in menu -->
+    <footer class="attribution">
+        <p>Icons by:</p>
+        <a href="https://www.vecteezy.com/free-vector/video-game-heart" target="_blank" rel="noopener">
+            Video Game Heart Vectors by Vecteezy</a><br>
+        <a href="https://www.vecteezy.com/free-vector/pixel" target="_blank" rel="noopener">
+            Pixel Vectors by Vecteezy</a><br>
+        <a href="https://www.vecteezy.com/free-vector/ai" target="_blank" rel="noopener">
+            Ai Vectors by Vecteezy</a><br>
+        <a href="https://www.vecteezy.com/free-vector/icons" target="_blank" rel="noopener">
+            Icons Vectors by Vecteezy</a><br>
+    </footer>
     <script src="main.js"></script>
-</body>
+  </body>
 </html>

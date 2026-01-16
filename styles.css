@@ -1,0 +1,47 @@
+body{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.score{
+    display:flex;
+    gap:100px;
+}
+
+.playerCount, .computerCount{
+    text-align:center;
+}
+
+.move, .restart{
+    margin: 20px;
+}
+
+img{
+    width: 50px;
+}
+
+.player img, .computer img{
+    margin: 50px;
+    width:150px;
+}
+
+.images{
+    display:flex;
+    justify-content: space-between;
+    min-width: 100vh;
+    margin:100px 100px 0px 100px;
+}
+
+.attribution {
+  font-size: 12px;
+  color: #666;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.attribution a {
+  color: inherit;
+  text-decoration: underline;
+}
